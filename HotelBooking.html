@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hotel Booking</title>
+<link rel="stylesheet" type="text/css" href="./HotelBooking.css">
+</head>
+<body>    
+<center>
+<h1>HOTEL BOOKING REGISTRATION</h1>
+<form id="booking-form">
+   <label> <h3>Customer Details</h3></label>
+<label for="name">Customer Name</label>
+<input type="text" id="name" name="name" required><br>
+<label for="check-in">Check-in Date</label>
+<input type="date" id="check-in" name="check-in" required><br>
+<label for="total-days">Total Number of Days</label>
+<input type="number" id="total-days" name="total-days" min="1"
+required><br>
+<label for="total-persons">Total Number of Persons</label>
+<input type="number" id="total-persons" name="total-persons" min="1"
+required>
+<br><br>
+<label for="room-type"><h3>Select Room Type</h3></label>
+<select id="room-type" name="room-type" required>
+<option value="">Select Room Type</option>
+<option value="deluxe">Deluxe Room:2500/-</option>
+<option value="suite">Suite Room:4000/-</option>
+</select><br><br>
+<label for="amenities"><h3>Select Amenities</h3></label><br>
+<section class="i1">
+    <div class="i2">
+<img class="i1" src="./AC.jpg" alt="AC image" title="AC" >
+<label for="ac">AC:1000/-</label>
+<input type="checkbox" id="ac" name="ac">
+
+<img class="i1" src="./1locker.jpg" alt="Locker image" title="Locker">
+<label for="locker">Locker:300/-</label><input type="checkbox" id="locker" name="locker">
+</div>
+</section>
+<label for="advance-payment"><h3>Advance Payment</h3></label>
+<input type="number" id="advance-payment" name="advance-payment"
+min="0" required><br><br>
+<input id="c" type="submit" value="REGISTER"><br>
+</form>
+</center>
+<script src="hotelbooking.js"></script>
+</body>
+</html
